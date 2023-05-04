@@ -31,7 +31,7 @@ st.write(task_data)
 st.markdown("### Gantt Chart:")
 if st.button("Create Gantt Chart"):
     fig = make_subplots(rows=1, cols=1, specs=[[{"type": "xy"}]])
-    fig = ff.create_gantt(task_data, colors=['#FF5733', '#37AA9C'], index_col='Priority', show_colorbar=True,
+    fig = ff.create_gantt(task_data, colors=['#FF5733', '#37AA9C', '#FFC300'], index_col='Priority', show_colorbar=True,
                           bar_width=0.2, showgrid_x=True, showgrid_y=True, group_tasks=True)
     st.plotly_chart(fig)
 
