@@ -8,6 +8,23 @@ from datetime import timedelta
 # App title
 st.title("Task Organizer with Gantt Chart")
 
+# App description in the sidebar
+st.sidebar.markdown("""
+This Streamlit app is a Task Organizer with a Gantt Chart visualization. The app allows users to input tasks, their start and finish dates, estimated hours, and priority (High, Medium, Low). Once the tasks are entered, the app generates a Gantt Chart to visualize each task's duration and priority levels.
+
+The app also includes a Daily Planning section. In this section, the app shows daily tasks along with the hours allocated to each task, sorted by priority levels. The user can easily see what tasks they need to work on each day and the estimated time to be dedicated to each task.
+
+Key features:
+
+1. Task input: Users can enter tasks, start and finish dates, estimated hours, and priority levels.
+2. Gantt Chart: Based on input tasks, the app generates a Gantt Chart to visualize each task's duration and prioritize tasks based on color codes.
+3. Daily Planning: The app provides a daily breakdown of tasks, including the hours allocated for each day, sorted by priority level. Users can see what tasks they need to focus on each day and estimate the hours they should spend on each task.
+- By Moris Polanco
+""")
+
+# ...
+
+
 # Creating tasks data table in the app
 st.markdown("### Enter your tasks:")
 tasks = st.empty()
